@@ -161,11 +161,10 @@ export default function Footer() {
                   />
                 </svg>
                 <div className="leading-relaxed">
-                  <div>TITANIUM CITY CENTER</div>
-                  <div>BUSINESS PARK, Satellite,</div>
-                  <div>E-609, 100 Feet Anand Nagar Rd,</div>
-                  <div>behind Titanium Mall,</div>
-                  <div>Ahmedabad, Gujarat</div>
+                  <div>Titanium city centre business park, E - 1203,</div>
+                  <div>100 Feet Anand Nagar Rd, Satellite,</div>
+                  <div>Jodhpur Village, Ahmedabad,</div>
+                  <div>Gujarat 380015</div>
                 </div>
               </div>
             </div>
