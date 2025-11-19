@@ -30,7 +30,7 @@ export default function Footer() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         {/* Top Section */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5 pb-10 border-b border-gray-800/50">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-6 pb-10 border-b border-gray-800/50">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block group mb-4">
@@ -137,7 +137,7 @@ export default function Footer() {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" 
                   />
                 </svg>
-                <span className="group-hover:underline font-medium">9898817587</span>
+                <span className="group-hover:underline font-medium">+91 9898817587</span>
               </a>
               
               <div className="flex items-start gap-2 text-sm text-gray-400">
@@ -161,10 +161,10 @@ export default function Footer() {
                   />
                 </svg>
                 <div className="leading-relaxed">
-                  <div>Titanium city centre business park, E - 1203,</div>
-                  <div>100 Feet Anand Nagar Rd, Satellite,</div>
+                  <div>E-1203, Titanium City Centre Business Park,</div>
+                  <div>100 Feet Anand Nagar Road, Satellite,</div>
                   <div>Jodhpur Village, Ahmedabad,</div>
-                  <div>Gujarat 380015</div>
+                  <div>Gujarat - 380015</div>
                 </div>
               </div>
             </div>
@@ -275,6 +275,27 @@ export default function Footer() {
                 >
                   Support
                 </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Branches */}
+          <div className="lg:col-span-1">
+            <h4 className="text-sm font-semibold uppercase tracking-wider mb-4 text-white">
+              Branches
+            </h4>
+            <ul className="space-y-2.5">
+              <li>
+              <span className="text-sm text-gray-400">Vadodara</span>
+              </li>
+              <li>
+                <span className="text-sm text-gray-400">Pune</span>
+              </li>
+              <li>
+                <span className="text-sm text-gray-400">Mumbai</span>
+              </li>
+              <li>
+                <span className="text-sm text-gray-400">Kolkata</span>
               </li>
             </ul>
           </div>
