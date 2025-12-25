@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && node scripts/cleanup-out.js && node scripts/copy-htaccess.mjs",
-    "cleanup": "node scripts/cleanup-out.js",
-    "start": "next start",
+    "preview": "npx serve@latest out",
     "lint": "eslint"
   },
   "dependencies": {
