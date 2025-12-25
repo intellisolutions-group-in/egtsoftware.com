@@ -12,7 +12,6 @@ export const metadata = generateSEO({
 
 export default function AboutPage() {
   const currentYear = new Date().getFullYear();
-  const yearsInBusiness = currentYear - parseInt(SITE_CONFIG.foundingYear);
 
   return (
     <>
@@ -59,7 +58,7 @@ export default function AboutPage() {
                 </div>
                 <div className="text-center">
                   <div className="text-5xl font-black text-blue-600 mb-2">
-                    {yearsInBusiness}+
+                    20+
                   </div>
                   <div className="text-sm text-gray-600 font-semibold">Years of Excellence</div>
                 </div>
@@ -134,7 +133,7 @@ export default function AboutPage() {
                     Our breakthrough came in 2005 when we helped a struggling retail chain identify hidden 
                     patterns in their sales data, leading to a 43% increase in profitability. That success 
                     story opened doors to finance, healthcare, manufacturing, and e-commerce sectors. Today, 
-                    our team of 35+ data scientists, analysts, and consultants brings together decades of 
+                    our team of data scientists, analysts, and consultants brings together decades of 
                     combined expertise in transforming raw data into strategic business advantages.
                   </p>
                   <p>
@@ -157,7 +156,7 @@ export default function AboutPage() {
                     </div>
                     <div>
                       <div className="text-6xl font-black text-blue-600 mb-3">
-                        {yearsInBusiness}+
+                        20+
                       </div>
                       <p className="text-2xl font-bold text-gray-900">Years of Excellence</p>
                       <p className="text-gray-600 mt-2">Trusted by businesses worldwide</p>

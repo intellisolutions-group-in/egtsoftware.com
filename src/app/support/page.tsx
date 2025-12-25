@@ -290,39 +290,6 @@ export default function SupportPage() {
           </div>
         </section>
 
-        {/* Resources */}
-        <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <div className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
-                Self-Service Resources
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                Help Yourself
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Access our comprehensive self-service resources
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {resourceLinks.map((resource, idx) => (
-                <Link key={idx} href={resource.link} className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 hover:border-transparent hover:-translate-y-2 text-center">
-                  <div className={`w-14 h-14 bg-gradient-to-br ${resource.gradient} rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-lg`}>
-                    <div className="text-white">
-                      {resource.icon}
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-                    {resource.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{resource.description}</p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Submit Ticket */}
     
         {/* CTA Section */}

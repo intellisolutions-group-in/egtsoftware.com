@@ -7,11 +7,10 @@ export const SITE_CONFIG = {
   description: "Since 2002, EGT Software has been delivering cutting-edge IT analytics, business intelligence, and data-driven solutions. Transform your business with our expert analytics services, real-time insights, and customized IT solutions.",
   
   // Contact Information
-  // ⚠️ TODO: Add your complete business contact information for better local SEO
   contact: {
     email: "info@egtsoftware.com",
-    phone: "", // TODO: Add phone number (e.g., "+1-555-123-4567")
-    address: "", // TODO: Add full business address (e.g., "123 Business St, Sydney NSW 2000, Australia")
+    phone: "+91 9898817587",
+    address: "E-1203, Titanium City Centre Business Park, 100 Feet Anand Nagar Road, Satellite, Jodhpur Village, Ahmedabad, Gujarat - 380015",
   },
   
   // URLs
@@ -20,7 +19,7 @@ export const SITE_CONFIG = {
   
   // Social Media
   social: {
-    twitter: "https://x.com/egtsoftware",
+    twitter: "",
     facebook: "https://www.facebook.com/profile.php?id=61583432995254",
     instagram: "https://www.instagram.com/egtsoftware3/",
   },
@@ -91,7 +90,7 @@ export const SITE_CONFIG = {
         "Enterprise-grade security with role-based access control and encryption",
         "High availability with 99.9% uptime SLA and disaster recovery",
         "Scalable infrastructure that handles millions of data points",
-        "Compliance with GDPR, HIPAA, SOC 2, and industry-specific regulations"
+        "Industry-standard data protection and privacy controls"
       ],
       implementationTimeline: "Typical implementations range from 8-16 weeks depending on complexity, data volume, and integration requirements. We follow a phased approach: discovery and planning (2-3 weeks), data integration and warehouse setup (3-5 weeks), dashboard development and customization (3-5 weeks), testing and refinement (1-2 weeks), and deployment with training (1 week).",
       supportModel: "We provide comprehensive support through multiple tiers: dedicated account management for enterprise clients, 24/7 technical support with average response times under 2 hours for critical issues, regular health checks and optimization reviews, proactive monitoring and alerting, and quarterly business reviews to ensure ongoing value delivery.",
@@ -125,7 +124,7 @@ export const SITE_CONFIG = {
         "Enterprise data governance framework ensuring data quality and lineage",
         "Scalable cloud infrastructure supporting petabytes of data",
         "Integration with all major enterprise systems and data warehouses",
-        "Compliance-ready analytics with audit trails and data retention policies"
+        "Audit trails and data retention policies for accountability"
       ],
       implementationTimeline: "Analytics projects typically take 6-12 weeks from initiation to delivery of insights. This includes data discovery and profiling (1-2 weeks), data preparation and cleaning (2-3 weeks), analysis development and model building (2-4 weeks), validation and testing (1-2 weeks), and presentation of findings with recommendations (1 week).",
       supportModel: "Post-delivery support includes ongoing maintenance of analytics models, periodic reviews to refresh analyses as new data arrives, training workshops to build internal analytics capabilities, consulting for strategic questions that arise, and access to our analytics experts for ad-hoc analyses.",
@@ -141,23 +140,23 @@ export const SITE_CONFIG = {
         "System architecture and design",
         "Technology stack optimization",
         "Digital transformation consulting",
-        "IT security and compliance"
+        "IT security assessment"
       ],
       extendedDescription: "Technology decisions today impact your business for years to come. Our IT consulting services provide the strategic guidance you need to make those decisions with confidence. We work with organizations that are growing, modernizing, or facing specific technical challenges. Our consultants bring decades of combined experience across various industries, which means we've likely encountered and solved problems similar to yours before. We take time to understand your business goals first, then align technology recommendations to support those objectives.",
       useCases: [
         "Planning a major technology upgrade but unsure where to start or which solutions fit best",
         "Experiencing performance issues with existing systems that need architectural review",
         "Preparing for business growth and need IT infrastructure that can scale accordingly",
-        "Facing compliance requirements and need guidance on security and regulatory standards",
+        "Need guidance on security standards and best practices for your organization",
         "Wanting to leverage new technologies but need help assessing what's right for your organization"
       ],
       ourApproach: "We start every consulting engagement with discovery sessions to understand your current state, pain points, and goals. We conduct thorough assessments of your existing infrastructure, applications, and processes. Then we develop practical roadmaps that balance immediate needs with long-term strategic objectives. Our recommendations always consider budget constraints, implementation complexity, and potential risks. We stay involved through the execution phase, providing oversight and adjustments as needed to ensure successful outcomes.",
       industries: ["Enterprise Software", "Healthcare IT", "Financial Services", "Manufacturing", "Government", "Education"],
       technologies: ["Enterprise Architecture", "Cloud Strategy", "Security Frameworks", "DevOps Practices", "Legacy Modernization"],
       enterpriseFeatures: [
-        "Consultants with 15+ years average experience across Fortune 500 companies",
+        "Consultants with 20+ years average experience across Fortune 500 companies",
         "Enterprise architecture frameworks including TOGAF, Zachman, and industry-specific standards",
-        "Comprehensive security assessments and compliance gap analysis",
+        "Comprehensive security assessments and gap analysis",
         "Strategic planning with 3-5 year technology roadmaps",
         "Executive-level presentations and board-ready recommendations"
       ],
@@ -193,11 +192,11 @@ export const SITE_CONFIG = {
         "Robust error handling and exception management with audit trails",
         "Scalable automation infrastructure supporting high-volume processing",
         "Integration capabilities with ERP, CRM, and legacy systems",
-        "Governance and compliance controls ensuring automation meets regulatory requirements"
+        "Governance controls ensuring automation meets business requirements"
       ],
       implementationTimeline: "Automation projects follow a structured timeline: process assessment and optimization opportunity identification (1-2 weeks), automation design and development (3-6 weeks), testing and quality assurance (1-2 weeks), pilot deployment and refinement (1-2 weeks), and full rollout with monitoring setup (1-2 weeks). Total timeline ranges from 8-14 weeks depending on complexity.",
       supportModel: "We provide comprehensive automation support including 24/7 monitoring of automated processes, exception handling and resolution, regular performance reviews and optimization, updates and maintenance as systems evolve, and training for your team to manage and modify automations as business needs change.",
-      roiMetrics: "Automation typically delivers ROI within 6-9 months through labor cost savings (automating repetitive tasks frees 20-40% of staff time for higher-value work), error reduction eliminating manual mistakes (typically 80-95% reduction), faster processing times (processes complete in hours rather than days), and improved compliance through consistent execution."
+      roiMetrics: "Automation typically delivers ROI within 6-9 months through labor cost savings (automating repetitive tasks frees 20-40% of staff time for higher-value work), error reduction eliminating manual mistakes (typically 80-95% reduction), faster processing times (processes complete in hours rather than days), and improved consistency through systematic execution."
     },
     {
       id: "cloud-solutions",
@@ -227,7 +226,7 @@ export const SITE_CONFIG = {
         "Enterprise security with identity management, encryption, and network security",
         "High availability designs with multi-region failover capabilities",
         "Cost optimization strategies reducing cloud spending by 20-40%",
-        "Compliance-ready infrastructure meeting SOC 2, ISO 27001, and industry standards"
+        "Infrastructure meeting industry-standard security and reliability practices"
       ],
       implementationTimeline: "Cloud migration and deployment timelines vary: assessment and planning phase (2-4 weeks), architecture design (2-3 weeks), migration or deployment execution (4-12 weeks depending on scope), testing and optimization (2-3 weeks), and go-live with cutover planning (1-2 weeks). Enterprise migrations typically span 12-24 weeks.",
       supportModel: "Our cloud support model includes managed services for ongoing operations, 24/7 monitoring and incident response, cost optimization reviews and recommendations, security updates and patch management, performance tuning and capacity planning, and regular architecture reviews to ensure optimal cloud utilization.",

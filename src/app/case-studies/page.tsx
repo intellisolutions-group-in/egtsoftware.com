@@ -35,7 +35,7 @@ export default function CaseStudiesPage() {
       industry: "Healthcare",
       client: "Private Hospital Network",
       challenge: "Fragmented patient data across multiple systems leading to inefficiencies and compliance risks",
-      solution: "Developed unified patient data platform with advanced analytics, automated reporting, and HIPAA-compliant security measures",
+      solution: "Developed unified patient data platform with advanced analytics, automated reporting, and secure data protection measures",
       results: [
         "65% reduction in data retrieval time",
         "100% compliance with healthcare regulations",
@@ -57,7 +57,7 @@ export default function CaseStudiesPage() {
         "90% reduction in risk assessment time",
         "32% improvement in investment performance",
         "99.7% accuracy in risk predictions",
-        "$2.5M annual cost savings"
+        "Significant annual cost reduction"
       ],
       technologies: ["Python", "TensorFlow", "Kafka", "Elasticsearch"],
       timeframe: "10 months",
@@ -74,7 +74,7 @@ export default function CaseStudiesPage() {
         "47% reduction in equipment downtime",
         "38% increase in production efficiency",
         "55% decrease in maintenance costs",
-        "$4.2M annual savings"
+        "Substantial operational savings"
       ],
       technologies: ["Azure IoT", "Power BI", "Time Series Analysis", "SQL Server"],
       timeframe: "12 months",
@@ -144,9 +144,9 @@ export default function CaseStudiesPage() {
                 Client Success Stories
               </div>
               <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
-                Real Results from{" "}
+                Proven Success{" "}
                 <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                  Real Businesses
+                  Stories
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
@@ -169,8 +169,8 @@ export default function CaseStudiesPage() {
                 <div className="text-gray-600 font-semibold">Client Satisfaction</div>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-black text-purple-600 mb-2">$50M+</div>
-                <div className="text-gray-600 font-semibold">Client Savings</div>
+                <div className="text-5xl font-black text-purple-600 mb-2">85%</div>
+                <div className="text-gray-600 font-semibold">Average ROI Improvement</div>
               </div>
               <div className="text-center">
                 <div className="text-5xl font-black text-orange-600 mb-2">15+</div>

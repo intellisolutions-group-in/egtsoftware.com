@@ -183,7 +183,7 @@ export default function ServicesPage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Enterprise Security</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Bank-level security and compliance with industry standards
+                  Bank-level security with industry-standard protection
                 </p>
               </div>
 

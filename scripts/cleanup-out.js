@@ -67,7 +67,7 @@ function cleanDir(dirPath) {
 // Directories to completely remove
 const dirsToRemove = [
   'about', 'contact', 'careers', 'case-studies',
-  'industries', 'partners', 'pricing', 'privacy',
+  'industries', 'pricing', 'privacy',
   'resources', 'support', 'team', 'terms', 'testimonials'
 ];
 

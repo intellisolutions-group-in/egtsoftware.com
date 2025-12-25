@@ -74,14 +74,6 @@ export default function Header() {
       ]
     },
     { 
-      name: "Company", 
-      href: "#",
-      dropdown: [
-        { name: "Partners", href: "/partners" },
-        { name: "Testimonials", href: "/testimonials" },
-      ]
-    },
-    { 
       name: "Solutions", 
       href: "#",
       dropdown: [
@@ -94,6 +86,7 @@ export default function Header() {
       href: "#",
       dropdown: [
         { name: "Blog", href: "/blog" },
+        { name: "Testimonials", href: "/testimonials" },
         { name: "Support", href: "/support" },
       ]
     },
@@ -199,20 +192,6 @@ export default function Header() {
               })}
             </div>
           </div>
-          </div>
-
-          {/* Desktop CTA Button */}
-          <div className="hidden lg:flex items-center">
-            <Link href="/contact">
-              <button className="group px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-lg shadow-md hover:shadow-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105">
-                <span className="flex items-center gap-2">
-                  Contact Us
-                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </span>
-              </button>
-            </Link>
           </div>
 
           {/* Mobile menu button */}

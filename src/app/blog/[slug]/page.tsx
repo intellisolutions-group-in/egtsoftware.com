@@ -219,7 +219,7 @@ const blogData: Record<string, BlogArticle> = {
         },
         {
           title: 'Quantify Error Reduction',
-          content: 'Humans make mistakes – it\'s just reality. Automated processes don\'t (well, they make different mistakes, but usually fewer of them). Calculate what errors cost you: rework, customer complaints, compliance issues. One company I worked with found that reducing invoice errors saved them $200K annually just in staff time fixing problems. That\'s real money.'
+          content: 'Humans make mistakes – it\'s just reality. Automated processes don\'t (well, they make different mistakes, but usually fewer of them). Calculate what errors cost you: rework, customer complaints, compliance issues. One company I worked with found that reducing invoice errors saved them significant staff time annually just in fixing problems. That\'s real value.'
         },
         {
           title: 'Don\'t Forget Hidden Costs',

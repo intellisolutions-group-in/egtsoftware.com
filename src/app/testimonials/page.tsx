@@ -30,7 +30,6 @@ export default function TestimonialsPage() {
     {
       name: "Rajesh Sharma",
       role: "CEO",
-      company: "TechCorp Australia",
       industry: "Technology",
       rating: 5,
       testimonial: "EGT Software helped us migrate to cloud infrastructure and implement business intelligence solutions. The team was professional and delivered the project within our timeline. We've seen significant improvements in our data processing capabilities.",
@@ -40,7 +39,6 @@ export default function TestimonialsPage() {
     {
       name: "Priya Deshmukh",
       role: "CTO",
-      company: "RetailMart Group",
       industry: "Retail",
       rating: 5,
       testimonial: "We worked with EGT Software to improve our inventory management system. Their data analytics solution helped us understand our stock patterns better and reduce waste. The support team has been responsive to our needs.",
@@ -50,7 +48,6 @@ export default function TestimonialsPage() {
     {
       name: "Dr. Amit Patel",
       role: "Director of Operations",
-      company: "MediCare Health Network",
       industry: "Healthcare",
       rating: 5,
       testimonial: "The patient data management system developed by EGT Software meets all our compliance requirements and has improved our workflow efficiency. The team took time to understand our healthcare-specific needs and delivered a solution that works well for our staff.",
@@ -60,17 +57,15 @@ export default function TestimonialsPage() {
     {
       name: "Sanjay Gupta",
       role: "CFO",
-      company: "Premier Investments",
       industry: "Finance",
       rating: 5,
       testimonial: "Our risk assessment process has become much more efficient with the automated system EGT Software built for us. The team demonstrated good knowledge of financial analytics and delivered a reliable solution that integrates well with our existing systems.",
-      results: ["90% time reduction", "32% performance improvement", "$2.5M annual savings"],
+      results: ["90% time reduction", "32% performance improvement", "Significant annual savings"],
       project: "Risk Analysis Automation"
     },
     {
       name: "Meera Krishnan",
       role: "Operations Manager",
-      company: "Pacific Logistics",
       industry: "Logistics",
       rating: 5,
       testimonial: "The route optimization system has made a real difference in our daily operations. We're seeing measurable improvements in delivery times and fuel efficiency. EGT Software delivered the project on schedule and provided good training to our team.",
@@ -80,17 +75,15 @@ export default function TestimonialsPage() {
     {
       name: "Vikram Singh",
       role: "VP of Engineering",
-      company: "ManufacturePro",
       industry: "Manufacturing",
       rating: 5,
       testimonial: "We implemented predictive maintenance and IoT integration with EGT Software's help. The analytics dashboard gives us visibility into our production processes that we didn't have before. It's helping us reduce unplanned downtime.",
-      results: ["47% downtime reduction", "38% efficiency increase", "$4.2M savings"],
+      results: ["47% downtime reduction", "38% efficiency increase", "Substantial cost savings"],
       project: "IoT & Predictive Maintenance"
     },
     {
       name: "Ananya Reddy",
       role: "Marketing Director",
-      company: "E-Shop Online",
       industry: "E-commerce",
       rating: 5,
       testimonial: "EGT Software developed customer behavior analytics and personalization features for our e-commerce platform. We've seen improvements in our conversion metrics since implementation. The team understood our business requirements and delivered accordingly.",
@@ -100,7 +93,6 @@ export default function TestimonialsPage() {
     {
       name: "Arjun Mehta",
       role: "IT Director",
-      company: "Global Bank Corp",
       industry: "Banking",
       rating: 5,
       testimonial: "Security and compliance are critical for our banking operations. EGT Software demonstrated solid expertise in financial regulations and data security while modernizing our analytics infrastructure. The implementation was well-planned and executed.",
@@ -110,7 +102,6 @@ export default function TestimonialsPage() {
     {
       name: "Kavya Iyer",
       role: "COO",
-      company: "EduTech Solutions",
       industry: "Education",
       rating: 5,
       testimonial: "The student performance analytics platform EGT Software built for us provides valuable insights to our teachers. The implementation process was smooth, and they provided comprehensive training to help our staff use the system effectively.",
@@ -124,25 +115,6 @@ export default function TestimonialsPage() {
     { value: "500+", label: "Happy Clients" },
     { value: "4.9/5", label: "Average Rating" },
     { value: "95%", label: "Client Retention" }
-  ];
-
-  const awards = [
-    {
-      title: "Best Analytics Solution 2024",
-      organization: "Tech Innovation Awards"
-    },
-    {
-      title: "Excellence in Data Science",
-      organization: "Australian Business Awards"
-    },
-    {
-      title: "Top IT Consulting Firm",
-      organization: "Industry Excellence Awards"
-    },
-    {
-      title: "Customer Service Excellence",
-      organization: "Service Quality Institute"
-    }
   ];
 
   return (
@@ -261,41 +233,9 @@ export default function TestimonialsPage() {
                     <div>
                       <div className="font-bold text-gray-900">{testimonial.name}</div>
                       <div className="text-sm text-gray-600">{testimonial.role}</div>
-                      <div className="text-sm text-blue-600 font-semibold">{testimonial.company}</div>
                       <div className="text-xs text-gray-500">{testimonial.industry}</div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Awards */}
-        <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <div className="inline-block px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-semibold mb-4">
-                Recognition
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                Awards & Recognition
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Industry recognition for our commitment to excellence
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {awards.map((award, idx) => (
-                <div key={idx} className="bg-white rounded-2xl p-8 shadow-lg border-2 border-gray-100 hover:border-yellow-300 hover:shadow-2xl transition-all duration-300 text-center">
-                  <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500">
-                    <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">{award.title}</h3>
-                  <p className="text-sm text-gray-600">{award.organization}</p>
                 </div>
               ))}
             </div>

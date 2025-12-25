@@ -195,31 +195,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Company & Services */}
+          {/* Services & Resources */}
           <div className="lg:col-span-1">
-            <h4 className="text-sm font-semibold uppercase tracking-wider mb-4 text-white">
-              Company
-            </h4>
-            <ul className="space-y-2.5 mb-6">
-              {[
-                { name: 'Partners', href: '/partners' },
-                { name: 'Testimonials', href: '/testimonials' },
-              ].map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    href={link.href} 
-                    className="text-sm text-gray-400 hover:text-blue-400 transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            
             <h4 className="text-sm font-semibold uppercase tracking-wider mb-4 text-white">
               Services
             </h4>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2.5 mb-6">
               {[
                 { name: 'Business Intelligence', id: 'business-intelligence' },
                 { name: 'Data Analytics', id: 'data-analytics' },
@@ -244,6 +225,26 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
+            
+            <h4 className="text-sm font-semibold uppercase tracking-wider mb-4 text-white">
+              Resources
+            </h4>
+            <ul className="space-y-2.5">
+              {[
+                { name: 'Blog', href: '/blog' },
+                { name: 'Testimonials', href: '/testimonials' },
+                { name: 'Support', href: '/support' },
+              ].map((link) => (
+                <li key={link.name}>
+                  <Link 
+                    href={link.href} 
+                    className="text-sm text-gray-400 hover:text-blue-400 transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Solutions */}
@@ -266,14 +267,6 @@ export default function Footer() {
                   className="text-sm text-gray-400 hover:text-blue-400 transition-colors"
                 >
                   Case Studies
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/support" 
-                  className="text-sm text-gray-400 hover:text-blue-400 transition-colors"
-                >
-                  Support
                 </Link>
               </li>
             </ul>

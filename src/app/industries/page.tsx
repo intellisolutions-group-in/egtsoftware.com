@@ -82,7 +82,7 @@ export default function IndustriesPage() {
     {
       name: "Healthcare",
       iconType: "healthcare",
-      description: "Healthcare providers face unique challenges in balancing patient care with operational efficiency. We deliver HIPAA-compliant analytics that help hospitals, clinics, and medical practices improve patient outcomes, streamline operations, and maintain the highest standards of data security and privacy.",
+      description: "Healthcare providers face unique challenges in balancing patient care with operational efficiency. We deliver secure analytics that help hospitals, clinics, and medical practices improve patient outcomes, streamline operations, and maintain the highest standards of data security and privacy.",
       services: [
         "Patient Data Management",
         "Clinical Decision Support",

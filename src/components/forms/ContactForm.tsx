@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, FormEvent, useEffect } from "react";
+import { useState, FormEvent } from "react";
 import Input from "@/components/ui/Input";
 import Textarea from "@/components/ui/Textarea";
 import Button from "@/components/ui/Button";
@@ -34,18 +34,7 @@ export default function ContactForm() {
 
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
-
-  // Auto-hide success/error message after 5 seconds
-  useEffect(() => {
-    if (submitStatus === "success" || submitStatus === "error") {
-      const timer = setTimeout(() => {
-        setSubmitStatus("idle");
-      }, 5000);
-      
-      return () => clearTimeout(timer);
-    }
-  }, [submitStatus]);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
@@ -80,7 +69,6 @@ export default function ContactForm() {
     }
 
     setIsSubmitting(true);
-    setSubmitStatus("idle");
 
     try {
       // For static export, we use mailto: as a fallback
@@ -100,8 +88,8 @@ export default function ContactForm() {
       // Open mail client
       window.location.href = mailtoLink;
       
-      // Simulate success (user will send email via their mail client)
-      setSubmitStatus("success");
+      // Show success modal
+      setShowSuccessModal(true);
       trackFormSubmission("Contact Form");
       
       // Reset form
@@ -115,7 +103,6 @@ export default function ContactForm() {
       setErrors({});
     } catch (error) {
       console.error("Form submission error:", error);
-      setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
     }
@@ -133,34 +120,40 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6" noValidate>
-      {/* Success Message - Above Form */}
-      {submitStatus === "success" && (
-        <div className="rounded-lg bg-green-50 border-2 border-green-200 p-4 animate-fadeInUp">
-          <div className="flex items-center gap-3">
-            <svg className="w-6 h-6 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <p className="text-sm font-semibold text-green-800">
-              Thank you for your message! We&apos;ll get back to you soon.
-            </p>
+    <>
+      {/* Success Modal */}
+      {showSuccessModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm animate-fadeIn">
+          <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full mx-4 animate-scaleIn">
+            <div className="text-center">
+              {/* Success Icon */}
+              <div className="mx-auto w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              
+              {/* Success Message */}
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                Thank You!
+              </h3>
+              <p className="text-gray-600 mb-6">
+                We&apos;ve received your message and will reach you soon.
+              </p>
+              
+              {/* Close Button */}
+              <button
+                onClick={() => setShowSuccessModal(false)}
+                className="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105"
+              >
+                Got it!
+              </button>
+            </div>
           </div>
         </div>
       )}
 
-      {/* Error Message - Above Form */}
-      {submitStatus === "error" && (
-        <div className="rounded-lg bg-red-50 border-2 border-red-200 p-4 animate-fadeInUp">
-          <div className="flex items-center gap-3">
-            <svg className="w-6 h-6 text-red-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <p className="text-sm font-semibold text-red-800">
-              Something went wrong. Please try again later.
-            </p>
-          </div>
-        </div>
-      )}
+      <form onSubmit={handleSubmit} className="space-y-6" noValidate>
 
       <Input
         label="Name"
@@ -223,6 +216,7 @@ export default function ContactForm() {
         {isSubmitting ? "Sending..." : "Send Message"}
       </Button>
     </form>
+    </>
   );
 }
 
