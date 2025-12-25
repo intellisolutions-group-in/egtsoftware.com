@@ -103,25 +103,22 @@ export default function Header() {
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
-          {/* Logo and Navigation */}
-          <div className="flex items-center gap-8">
-            <Link 
-              href="/" 
-              className="flex items-center space-x-3 group"
-            >
-              <Image 
-                src="/assets/logos/EGTSoftwareLogo-02 (1).png" 
-                alt={`${SITE_CONFIG.name} Logo`}
-                width={150}
-                height={60}
-                className="h-12 w-auto group-hover:scale-105 transition-all duration-300"
-              />
-              
-            </Link>
+          {/* Logo */}
+          <Link 
+            href="/" 
+            className="flex items-center space-x-3 group"
+          >
+            <Image 
+              src="/assets/logos/EGTSoftwareLogo-02 (1).png" 
+              alt={`${SITE_CONFIG.name} Logo`}
+              width={150}
+              height={60}
+              className="h-12 w-auto group-hover:scale-105 transition-all duration-300"
+            />
+          </Link>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:block">
-            <div className="flex items-center space-x-1">
+          {/* Desktop Navigation - Moved to Right */}
+          <div className="hidden lg:flex items-center space-x-1">
               {navigation.map((item) => {
                 let isActive = pathname === item.href || (item.href !== "/" && pathname?.startsWith(item.href));
                 
@@ -190,8 +187,6 @@ export default function Header() {
                   </div>
                 );
               })}
-            </div>
-          </div>
           </div>
 
           {/* Mobile menu button */}
